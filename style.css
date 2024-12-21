@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Alumni+Sans+Pinstripe:ital@0;1&family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --primary-background-color: #97c1a9 ;
+  --secondary-background-color: #b6cfb6;
+  --primary-text-color: white;
+  --third-background-color: #CCE2CB;
+  --padding: 24px;
+}
+
+.alumni-sans-pinstripe-regular {
+  font-family: "Alumni Sans Pinstripe", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alumni-sans-pinstripe-regular-italic {
+  font-family: "Alumni Sans Pinstripe", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family: "Alumni Sans Pinstripe", serif;
+    
+}
+
+.page-title-container {
+  text-align: center;
+  height: 200px;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.gif-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  gap: 20px;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.gif-container img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.search-container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding: var(--padding);
+  border-radius: 28px;
+  background: var(--secondary-background-color);
+  margin: 20px auto;
+  margin-top: 0;
+}
+
+.search-input {
+  font-size: 16px;
+  color: var(--primary-text-color);
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 90%;
+}
+
+button {
+  border: none;
+  width: 50px;
+  background: var(--secondary-background-color);
+  color: var(--primary-text-color);
+}
+
+.search-input::placeholder {
+  color: var(--primary-text-color);
+}
+
+@media screen and (max-width: 700px) {
+  .gif-container{
+     grid-template-columns: auto;
+     gap: 10px;
+ 
+  }
+  .gif-container img{
+     width: 90%;
+     height: auto;
+  }
+
+}
